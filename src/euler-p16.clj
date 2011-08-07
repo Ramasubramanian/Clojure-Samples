@@ -18,6 +18,6 @@
   (recur (x2 n) (dec cur))))
 
 (defn euler-p16 [n]
-  (reduce + (two-power (list 1) n)))
+  (reduce str (two-power (list 1) n)))
 
-(time (println (euler-p16 1000)))
+(time (println (euler-p16 10000)))
